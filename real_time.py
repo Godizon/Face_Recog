@@ -20,7 +20,7 @@ def findEncodings(images):
     return encodeList
 encoded_face_train = findEncodings(images)
 
-test = face_recognition.load_image_file('test.jpg')
+test = face_recognition.load_image_file('C:/Users/aadwa/OneDrive/Documents/GitHub/Face_Recog/test.jpg')
 test = cv2.cvtColor(test, cv2.COLOR_BGR2RGB)
 test_encode = face_recognition.face_encodings(test)[0]
 i=0
